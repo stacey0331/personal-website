@@ -1,0 +1,296 @@
+/* Quicksand is from google font, embeded link in index.html */
+* {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+/* The main title of each page (execept home page) */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin: 80px 30px 50px 30px;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  margin: 100px 30px 50px 30px;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 10px 10px 0px;
+}
+
+p {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+button {
+  border: none;
+  padding: 15px 30px 15px 30px;
+  background-color: #EDD9FF;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
+
+iframe {
+  margin: 3% 10% 3% 10%;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #9B00AD;
+}
+
+.noUHover:hover {
+  text-decoration: none;
+}
+
+.mr-2 {
+  border: none;
+}
+
+.mr-2:focus {
+  outline: 0;
+}
+
+/* The back to top button on the bottom right corver of some pages */
+.backToTop {
+  width: 100px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* The icon next to buttons */
+.buttonIcon {
+  height: 25px;
+  padding-left: 5px;
+}
+
+/* Home page main title */
+.homeTitle {
+  font-size: 70px;
+}
+
+/* Home page sub title */
+.homeSubtitle {
+  font-size: 40px;
+}
+
+/* Stacey's Avatar */
+#avatar {
+  margin: 5%;
+  border-radius: 50%;
+  width: 200px;
+}
+
+/* Signature image on NavBar */
+.signature {
+  width: 110px;
+}
+
+/* Menu Items in Naviation */
+.navItem {
+  font-family: 'Dancing Script', cursive;
+  font-size: 300%;
+  padding-bottom: 150px;
+  padding-left: 100px;
+  text-align: left;
+}
+
+.footer {
+  background-color: #EDD9FF;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+}
+
+.socials {
+  text-align: right;
+}
+
+.social {
+  width: 40px;
+  margin: 30px;
+}
+
+.copyright {
+  text-align: left;
+  color: #796A7B;
+  position: absolute;
+  margin: 60px 0px 10px 20px;
+}
+
+/* images of Stacey in the About me page */
+.myPhoto {
+  width: 200px;
+  margin: 50px;
+}
+
+/* The experience section in About me page */
+.experienceText {
+  text-align: left;
+}
+
+.experienceDate {
+  text-align: left;
+  font-size: smaller;
+  color: #4E4D4D;
+}
+
+/* Text in Experience section, About me page */
+.expText {
+  margin: 0px 10% 0px 10px;
+}
+
+/* Illutrations in Experience section, About me page */
+.expIll {
+  display: inline-block;
+  height: 120px;
+  width: 50%;
+  margin: auto;
+}
+
+/* 2 columns grid layout */
+.grid-container-2 {
+  display: grid;
+  grid-template-areas: 
+    'col1 col2';
+  grid-row-gap: 50px;
+  margin: 0px 20% 0px 20%;
+}
+
+/* 3 columns grid layout */
+.grid-container-3 {
+  display: grid;
+  grid-template-areas: 
+    'col1 col2 col3';
+  margin: 5% 20% 0px 15%;
+  grid-column-gap: 50px;
+}
+
+.interestsPic {
+  width: 300px;
+  margin: auto;
+}
+
+/* The preview image of projects, on Portfolio page */
+.previewImg {
+  width: 300px;
+}
+
+/* For the portfolio project preview page and the project page */
+.projectText {
+  text-align: left;
+}
+
+.fields {
+  font-weight: bold;
+}
+
+/* To the project's github page in project pages */
+.githubButton {
+  width: 225px;
+  background-color: #E1E1E1;
+}
+
+/* The "Go back" button from project to portfolio pahge */
+.goBack {
+  margin: 20px;
+  text-align: left;
+}
+
+.backArrow {
+  width: 35px;
+}
+
+.unlinkedButton {
+  text-decoration: line-through;
+}
+
+.unlinkedButton:hover {
+  text-decoration: line-through;
+
+}
+
+.coloredLink {
+  color: #9B00AD;
+  text-decoration: underline;
+}
+
+.coloredLink:hover {
+  color: yellow;
+}
+
+/* Contact form */
+form {
+  text-align: left;
+  margin: 50px 0px 0px 50px;
+}
+
+input, textarea {
+  border: 1px solid#BD74FE;
+  border-radius: 10px;
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1.5px solid yellow;
+}
+
+/* The image on the side of the contact me form */
+.contactMeImg {
+  width: 300px;
+  margin: 50px;
+  filter: drop-shadow(20px 20px 0px #EDD9FF);
+}
+
+/* The red required symbol after each field in contact form */
+.required:after {
+  content: "  *";
+  color: red;
+}
+
+/* The text "connect with me on socials" */
+.socialsText {
+  text-align: right;
+  margin-right: 200px;
+}
+
+/* Tbe "connect with me on socials" arrow */
+.curlyArrow {
+  width: 100px;
+  transform: rotate(20deg);
+}
+
+
+
+
+
+
+
+
+
+
+
