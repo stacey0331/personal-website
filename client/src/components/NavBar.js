@@ -12,23 +12,23 @@ const NavBar = (props) => {
       <Navbar color="faded" style={{backgroundColor: "#EDD9FF"}} light>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <div style={{textAlign: "right"}}>
-            <NavbarBrand href="/" className="mr-auto"><img src={signature} class="signature" alt="signature" /> </NavbarBrand>
+            <NavbarBrand href="/" className="mr-auto"><img src={signature} className="signature" alt="signature" /> </NavbarBrand>
         </div>
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar >
             <NavItem>
               <NavLink href="/about-me">
-                  <div class="navItem">About me</div>
+                  <div className="navItem">About me</div>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/portfolio">
-                  <div class="navItem">Portfolio</div>
+                  <div className="navItem">Portfolio</div>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/contact-me"> 
-                <div class="navItem">Contact me</div>
+                <div className="navItem">Contact me</div>
               </NavLink>
             </NavItem>
           </Nav>

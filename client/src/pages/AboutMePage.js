@@ -23,13 +23,7 @@ import resumeIcon from '../images/resumeIcon.png';
 import igIcon from '../images/igIcon-colored.png';
 import upIcon from '../images/upArrow.png';
 
-const AboutMePage = () => {
-    function resumeAction(e) {
-        e.preventDefault();
-
-    }
-
-    return (
+const AboutMePage = () => (
         <>
             <h1>About me</h1>
             <AboutmeIntro />
@@ -81,7 +75,6 @@ const AboutMePage = () => {
             <br /><br /><br /><br />
         </>
     );  
-}
 
 
 

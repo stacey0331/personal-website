@@ -22,13 +22,13 @@ createResponse = (req, res) => {
             return res.status(201).json({
                 success: true,
                 id: response._id,
-                message: 'Response created!',
+                message: 'Server: Response created!',
             })
         })
         .catch(error => {
             return res.status(400).json({
                 error,
-                message: 'Failed to create message...'
+                message: 'Server: Failed to create message...'
             })
         })
 
