@@ -1,0 +1,32 @@
+/* Quicksand is from google font, embeded link in index.html */
+* {
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
+  margin: 80px 30px 50px 30px;
+}
+
+table {
+  margin: auto; /* make table in the center of the page */
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+  border: 1px solid black;
+  width: 200px;
+}
+
+#tableHeader {
+  background-color: hsl(278, 69%, 65%);
+  color: white;
+}
+
+tr:nth-child(odd){
+  background-color: #EDD9FF;
+}

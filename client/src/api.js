@@ -4,8 +4,12 @@ const api = axios.create({
     baseURL: 'http://localhost:8001/api',
 });
 
-export const createResponse = payload => {
-    const promise = api.post('/newResponse', payload)
+export const createResponse = (name, email, message) => {
+    const promise = api.post('/newResponse', {
+        name: name,
+        email: email, 
+        message: message
+    })
         .then(() => {
             console.log('Client: response created');
         })
@@ -15,11 +19,8 @@ export const createResponse = payload => {
     return promise;
 }
 
-export const getResponses = () => api.get('/responses');
-
 const apis = {
     createResponse,
-    getResponses,
 }
 
 export default apis;
