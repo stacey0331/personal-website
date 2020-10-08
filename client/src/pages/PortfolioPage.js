@@ -7,7 +7,6 @@ import person1 from '../images/project-snapshots/Personal-1.png';
 import econ1 from '../images/project-snapshots/Econ-1.png';
 import trig1 from '../images/project-snapshots/Trig-1.png'
 
-
 const PortfolioPage = () => (
  <>
     <h1>Portfolio</h1>

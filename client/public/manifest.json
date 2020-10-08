@@ -10,11 +10,16 @@
     {
       "src": "purpleHeart.png",
       "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "purpleHeart.png",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#EDD9FF",
   "background_color": "#ffffff"
 }
