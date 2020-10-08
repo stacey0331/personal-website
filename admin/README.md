@@ -7,7 +7,7 @@ The data is pulled from MongoDB.
 
 The admin site will be running at here by default: 
 
-```localhost:3001
+```localhost:3001```
 
 If you want to run on a different port instead, go to admin/package.json and change the "PORT=3001" to "PORT=<port number you want>".
 
