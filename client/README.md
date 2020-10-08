@@ -8,7 +8,7 @@ The client site will be running at here by default:
 
 ```localhost:3000```
 
-If you want to run on a different port instead, go to admin/package.json and change the "PORT=3000" to "PORT=<port number you want>".
+If you want to run on a different port instead, go to admin/package.json and change the "PORT=3000" to "PORT=(port number you want)".
 
 ##  Development: Available Scripts
 

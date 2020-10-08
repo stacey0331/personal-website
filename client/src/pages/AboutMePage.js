@@ -39,20 +39,26 @@ const AboutMePage = () => (
             </a>
         
             <h2>Experience</h2>
-            <div class="grid-container-2">
+            <div class="exp">
                 <Experience info={aboutmeExperience[0]}/>
-                <img class="expIll" src={illWebDev} alt="Web development" />
-        
+                <img class="expIll" src={illWebDev} alt="Web development" />  
+            </div>
+
+            <div class="exp">
                 <Experience info={aboutmeExperience[1]} />
                 <img class="expIll" src={illMarketing} alt="Marketing" />
-        
+            </div>
+
+            <div class="exp">
                 <Experience info={aboutmeExperience[2]} />
-                <img class="expIll" src={illI18n} alt="Internationalization" />
-        
+                <img class="expIll" src={illI18n} alt="Internationalization" /> 
+            </div>
+
+            <div class="exp">
                 <Experience info={aboutmeExperience[3]} />
                 <img class="expIll" src={illMath} alt="Math" />
             </div>
-        
+
             <h2>Interests</h2>
             <AboutmeInterest />
             <iframe title="16 shots cover" width="560" height="315" src="https://www.youtube-nocookie.com/embed/fdqfjg8IWzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

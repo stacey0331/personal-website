@@ -19,9 +19,9 @@ h2 {
 
 h3 {
   font-size: 20px;
-  text-align: left;
   font-weight: bold;
   margin: 10px 10px 10px 0px;
+  text-align: left;
 }
 
 p {
@@ -42,6 +42,8 @@ button:focus {
 
 iframe {
   margin: 3% 10% 3% 10%;
+  width: 80vw;
+  max-width: 560px;
 }
 
 a {
@@ -80,19 +82,23 @@ a:hover {
 
 /* Home page main title */
 .homeTitle {
-  font-size: 70px;
+  font-size: 6vh;
+  margin: 5vh;
 }
 
 /* Home page sub title */
 .homeSubtitle {
-  font-size: 40px;
+  font-size: 4vh;
+  margin: 5vh;
+  margin-bottom: 18vh;
 }
 
 /* Stacey's Avatar */
 #avatar {
-  margin: 5%;
   border-radius: 50%;
-  width: 200px;
+  width: 25vh;
+  margin: 10vh;
+  margin-bottom: 5vh;
 }
 
 /* Signature image on NavBar */
@@ -104,8 +110,8 @@ a:hover {
 .navItem {
   font-family: 'Dancing Script', cursive;
   font-size: 300%;
-  padding-bottom: 150px;
-  padding-left: 100px;
+  padding-bottom: 26vh;
+  padding-left: 10vw;
   text-align: left;
 }
 
@@ -121,15 +127,17 @@ a:hover {
 }
 
 .social {
-  width: 40px;
-  margin: 30px;
+  width: 7%;
+  max-width: 35px;
+  margin: 50px 20px 10px 2%;
 }
 
 .copyright {
   text-align: left;
   color: #796A7B;
+  font-size: 12px;
   position: absolute;
-  margin: 60px 0px 10px 20px;
+  margin: 60px 0 10px 20px;
 }
 
 /* images of Stacey in the About me page */
@@ -141,6 +149,9 @@ a:hover {
 /* The experience section in About me page */
 .experienceText {
   text-align: left;
+  margin-left: 15vw;
+  display: inline-block;
+  width: 30%;
 }
 
 .experienceDate {
@@ -149,17 +160,15 @@ a:hover {
   color: #4E4D4D;
 }
 
-/* Text in Experience section, About me page */
-.expText {
-  margin: 0px 10% 0px 10px;
-}
-
 /* Illutrations in Experience section, About me page */
 .expIll {
   display: inline-block;
   height: 120px;
   width: 50%;
+  min-width: 100px;
   margin: auto;
+  position: relative;
+  top: -70px;
 }
 
 /* 2 columns grid layout */
@@ -171,18 +180,21 @@ a:hover {
   margin: 0px 20% 0px 20%;
 }
 
-/* 3 columns grid layout */
-.grid-container-3 {
-  display: grid;
-  grid-template-areas: 
-    'col1 col2 col3';
-  margin: 5% 20% 0px 15%;
-  grid-column-gap: 50px;
+.interestsPic {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
 }
 
-.interestsPic {
+.projectPreview {
+  text-align: left;
+  display: inline-block;
+  margin: 30px;
   width: 300px;
-  margin: auto;
+}
+
+.projectPreviews {
+  margin-bottom: 50px;
 }
 
 /* The preview image of projects, on Portfolio page */
@@ -235,21 +247,24 @@ a:hover {
 
 /* Contact form */
 form {
+  display: inline-block;
   text-align: left;
-  margin: 50px 0px 0px 50px;
+  margin: 50px 0 0 px;
 }
 
 input, textarea {
   border: 1px solid#BD74FE;
   border-radius: 10px;
-  width: 250px;
+  width: 18vw;
+  max-width: 250px;
   padding: 10px;
   margin-bottom: 20px;
   text-align: left;
 }
 
 textarea {
-  width: 300px;
+  width: 27vw;
+  max-width: 300px;
   height: 100px;
   padding: 10px;
 }
@@ -261,9 +276,12 @@ input:focus, textarea:focus {
 
 /* The image on the side of the contact me form */
 .contactMeImg {
-  width: 300px;
+  position: relative;
+  top: -200px;
+  width: 30%;
+  max-width: 300px;
   margin: 50px;
-  filter: drop-shadow(20px 20px 0px #EDD9FF);
+  filter: drop-shadow(20px 20px 0 #EDD9FF);
 }
 
 /* The red required symbol after each field in contact form */
@@ -282,6 +300,56 @@ input:focus, textarea:focus {
 .curlyArrow {
   width: 100px;
   transform: rotate(20deg);
+}
+
+/* Small screen display (like mobile) */
+@media only screen and (max-width: 570px) {
+  h1 {
+    font-size: 75px;
+    margin: 70px 30px 50px 30px;
+  }
+
+  p {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .navItem {
+    padding-bottom: 18vh;
+  }
+
+  .homeSubtitle {
+    font-size: 30px;
+    margin-bottom: 80px;
+  }
+
+  .contactMeImg {
+    top: 0;
+    width: 300px;
+  }
+
+  button {
+    font-size: 13px;
+  }
+
+  .experienceText {
+    width:80%;
+    margin: 0 10px;
+  }
+
+  .expIll {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    top: 0;
+  }
+
+  input {
+    width: 250px;
+  }
+
+  textarea {
+    width: 300px;
+  }
 }
 
 

@@ -11,23 +11,33 @@ const ContactMePage = () => {
       const name = document.getElementById('yourName').value;
       const email = document.getElementById('yourEmail').value;
       const message = document.getElementById('message').value;
+      
+      // Calculate time of form submission
+      const date = new Date();
+      const time = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate() + ' ' + date.getHours() + ':' + date.getMinutes();
 
-      api.createResponse(name, email, message)
+      if (name && email && message) {
+         api.createResponse(time, name, email, message)
          .then((res) => {
             if (alert('Message sent successfully')) {}
             else window.location.reload();
-         })
+         });
+      } else {
+         alert('Please fill out all the required fields.');
+      }
+
    }
 
    return (
       <>
          <h1>Contact me</h1>
+         <p>
          Feel free to contact me regarding anything (including your thoughts on this site :) 
-         <br />
-         Or, contact me through email <a className="coloredLink" href="mailtostaceyleetsaihsun@gmail.com">staceyleetsaihsun@gmail.com</a>
-         <img className="buttonIcon" src={emailIcon} alt=" " />
-   
-      <div className="grid-container-2">
+            <br />
+            Or, contact me through email <a className="coloredLink" href="mailtostaceyleetsaihsun@gmail.com">staceyleetsaihsun@gmail.com</a>
+            <img className="buttonIcon" src={emailIcon} alt=" " />  
+         </p>
+
          <form>
             <label className="required" htmlFor="yourName">Your name </label><br />
             <input placeholder="Format First Last" id="yourName" required/><br />
@@ -41,11 +51,9 @@ const ContactMePage = () => {
             <button type="submit" onClick={handleIncludeResponse}>Send</button>
          </form>
          <img className="contactMeImg" src={backPic} alt="Stacey" />
-      </div>
-      <br /><br /><br /><br />
-      <div className="socialsText">
-         Connect with me on socials <img className="curlyArrow" src={curlyArrow} alt="arrow" />
-      </div>
+         <div className="socialsText">
+            Connect with me on socials <img className="curlyArrow" src={curlyArrow} alt="arrow" />
+         </div>
       </>
    );
 }

@@ -12,12 +12,11 @@ const PortfolioPage = () => (
     <h1>Portfolio</h1>
     <p>Here’re a selection of some of my programming projects</p>
 
-    <div class="grid-container-3">
+    <div class="projectPreviews">
       <ProjectPreview project={portfolioProject[0]} img={person1} />
       <ProjectPreview project={portfolioProject[1]} img={econ1} />
       <ProjectPreview project={portfolioProject[2]} img={trig1} />
     </div>
-    <br /><br /><br /><br />
  </>
 );
 

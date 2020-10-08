@@ -4,8 +4,9 @@ const api = axios.create({
     baseURL: 'http://localhost:8001/api',
 });
 
-export const createResponse = (name, email, message) => {
+export const createResponse = (time, name, email, message) => {
     const promise = api.post('/newResponse', {
+        time: time,
         name: name,
         email: email, 
         message: message

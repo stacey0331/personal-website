@@ -30,7 +30,6 @@ const ProjectPage = ({ match }) => {
             <h1>{project.title}</h1>
             
             <p class="projectText">
-                <h3>Project Info</h3>
                 <span class="fields">Author(s): </span>{project.author} 
                 <br/>
                 <span class="fields">Date: </span>{project.date}
