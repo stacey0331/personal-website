@@ -1,8 +1,8 @@
 # Stacey's Website
 
-Stacey believe this website would help her future employees or friends to better understand her experiences. 
+Stacey believes this website would help her future employees or friends to better understand her experiences. 
 
-This website is created by Stacey Lee independently, from coding the FE/BE to UI design. 
+This website is created by Stacey independently, from coding the FE/BE to UI design. 
 
 ## Visuals
 
