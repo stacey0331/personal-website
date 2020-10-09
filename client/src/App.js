@@ -4,6 +4,7 @@ import {
   Switch, 
   Route
 } from 'react-router-dom';
+import $ from "jquery";
 
 // Pages
 import HomePage from './pages/HomePage';
@@ -20,8 +21,15 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
+  $(window).on('load', function() {
+    $('#loading').hide();
+  });
+  
   return (
     <Router>
+      <div id="loading">
+        <img id="loading-image" src="https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif" alt="Loading..." />
+      </div>
       <NavBar />
       <Switch>
         <Route path="/" component={HomePage} exact/>
