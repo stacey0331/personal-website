@@ -23,7 +23,7 @@ const ContactMePage = () => {
             else window.location.reload();
          });
       } else {
-         alert('Please fill out all the required fields.');
+         alert('Please fill out all the required fields and try again.');
       }
 
    }
@@ -32,7 +32,7 @@ const ContactMePage = () => {
       <>
          <h1>Contact me</h1>
          <p>
-         Feel free to contact me regarding anything (including your thoughts on this site :) 
+            Feel free to contact me regarding anything (including your thoughts on this site :) 
             <br />
             Or, contact me through email <a className="coloredLink" href="mailtostaceyleetsaihsun@gmail.com">staceyleetsaihsun@gmail.com</a>
             <img className="buttonIcon" src={emailIcon} alt=" " />  

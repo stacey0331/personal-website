@@ -1,5 +1,5 @@
 import React from 'react';
-import portfolioProject from '../text/portfolio-project.js'
+import portfolioProject from '../text/portfolio-project.js.js'
 import NotFoundPage from './NotFoundPage';
 import githubIcon from '../images/githubIcon.png';
 import tarIcon from '../images/tarIcon.png';

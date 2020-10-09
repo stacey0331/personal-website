@@ -67,11 +67,12 @@ a:hover {
   text-align: center;
 }
 
-#loading-image {
+#loadingText {
+  font-size: 25px;
   position: absolute;
+  left: 40%;
   top: 45%;
-  left: 45%;
-  z-index: 100;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .noUHover:hover {
@@ -269,7 +270,7 @@ a:hover {
 form {
   display: inline-block;
   text-align: left;
-  margin: 50px 0 0 px;
+  margin: 50px 10px 0 10px;;
 }
 
 input, textarea {

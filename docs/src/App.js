@@ -28,7 +28,7 @@ function App() {
   return (
     <Router>
       <div id="loading">
-        <img id="loading-image" src="https://media.giphy.com/media/y1ZBcOGOOtlpC/giphy.gif" alt="Loading..." />
+        <div id="loadingText">Loading ...</div>
       </div>
       <NavBar />
       <Switch>

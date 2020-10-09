@@ -1,4 +1,4 @@
-# Client
+# Docs
 
 This folder contains the frontend of the website.
 

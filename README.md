@@ -1,41 +1,46 @@
 # Stacey's Website
 
+Stacey believe this website would help her future employees or friends to better understand her experiences. 
+
+This website is created by Stacey Lee independently, from coding the FE/BE to UI design. 
+
 ## Visuals
 
-## Installation
+![ App snapsot ](snapshots/cross-device-testing.png) 
+
+## Local Installation
 
 1. Download all the package and the dependencies
 
-```
-cd client
-npm i
-cd ..
-```
+    ```
+    cd docs
+    npm i
+    cd ..
+    ```
 
-```
-cd server
-npm i
-cd ..
-
-```
-```
-#! Run this only when you're the admin
-cd admin
-npm i
-cd ..
-```
+    ```
+    cd server
+    npm i
+    cd ..
+    ```
+    ```
+    #! Run this only when you're the admin
+    cd admin
+    npm i
+    cd ..
+    ```
 
 2. Run ```npm start``` inside all folders (except the /admin folder if you're not the admin`).
 
-Frontend(client)
-```
-localhost:3000
-```
+    Frontend(client)
+    ```
+    localhost:3000
+    ```
 
-Admin
-```
-localhost:3001
-```
+    Admin
+    ```
+    localhost:3001
+    ```
 
 ## Support
 

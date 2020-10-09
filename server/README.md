@@ -6,4 +6,4 @@ To connect to MongoDB, simply type this in your terminal (and don't exit with Ct
 
 ```npm start```
 
-Please do this step before you run "npm start" in the client and admin folder. 
+Please do this step before you run "npm start" in the docs and admin folder. 
