@@ -18,14 +18,17 @@ const ContactMePage = () => {
 
       if (name && email && message) {
          api.createResponse(time, name, email, message)
-         .then((res) => {
+         .then(res => {
             if (alert('Message sent successfully')) {}
             else window.location.reload();
-         });
+         })
+         .catch(err => {
+            if (alert('Send message failed')) {}
+            else window.location.reload();
+         })
       } else {
          alert('Please fill out all the required fields and try again.');
       }
-
    }
 
    return (
@@ -40,7 +43,7 @@ const ContactMePage = () => {
 
          <form>
             <label className="required" htmlFor="yourName">Your name </label><br />
-            <input placeholder="Format First Last" id="yourName" required/><br />
+            <input placeholder="Format: First Last" id="yourName" required/><br />
    
             <label className="required" htmlFor="yourEmail">Your email</label><br />
             <input type="email" placeholder="email@address.com" id="yourEmail" required/><br />

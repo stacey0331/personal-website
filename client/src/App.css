@@ -234,7 +234,7 @@ a:hover {
 
 /* To the project's github page in project pages */
 .githubButton {
-  width: 225px;
+  width: 220px;
   background-color: #E1E1E1;
 }
 
@@ -370,6 +370,10 @@ input:focus, textarea:focus {
 
   textarea {
     width: 300px;
+  }
+
+  #loadingText {
+    left: 20%;
   }
 }
 

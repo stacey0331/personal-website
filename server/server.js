@@ -4,7 +4,7 @@ const cors = require('cors');
 const db = require('./db');
 const formRouter = require('./routes/form-router.js');
 const app = express();
-const apiPort = 8001;
+const apiPort = 8000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
@@ -17,7 +17,7 @@ db.once('open', function() {
 db.on('error', console.error.bind(console, 'MongoDB connection error: '));
 
 app.get('/', (req, res) => {
-    res.send('Hello world!');
+    res.send('This is the server');
 })
 
 app.use('/api', formRouter);

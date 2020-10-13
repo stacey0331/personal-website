@@ -2,8 +2,12 @@ import React from 'react';
 import portfolioProject from '../text/portfolio-project'
 import NotFoundPage from './NotFoundPage';
 import githubIcon from '../images/githubIcon.png';
-import tarIcon from '../images/tarIcon.png';
+import dirIcon from '../images/dirIcon.png';
 import leftArrow from '../images/leftArrow.png';
+
+// Project files
+import Econ101 from '../files/Econ101.zip';
+import TrigCrashCourse from '../files/TrigCrashCourse.zip';
 
 const ProjectPage = ({ match }) => {
     const name = match.params.name;
@@ -17,7 +21,7 @@ const ProjectPage = ({ match }) => {
     if (project.vidLink) {
         appExplained =  <iframe title="App Explained" width="560" height="315" src={project.vidLink} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     } else {
-        appExplained = "Oops! The author is still making this video :) watch videos in other projects"
+        appExplained = <p>Oops! The author is still making this video :) watch the videos in other projects</p>
     }
 
     return (
@@ -46,15 +50,20 @@ const ProjectPage = ({ match }) => {
                 {project.longDescription.map((paragraph, key) => (
                     <><br />{paragraph}</>
                 ))}
-                <br/><br/><button>Download .tar file<img class="buttonIcon" src={tarIcon} alt=" "/></button>
                 <br/><br/>
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <button class={project.githubLink ? 'githubButton' : 'unlinkedButton githubButton' }>View on GitHub<img class="buttonIcon" src={githubIcon} alt=" "/></button>
+                <a href={project.dirDownload === "Econ101" ? Econ101 : project.dirDownload === "TrigCrashCourse" ? TrigCrashCourse : ''}>
+                    <button class={project.dirDownload ? '' : 'unlinkedButton'} disabled={!project.dirDownload}>
+                        Download folder<img class="buttonIcon" src={dirIcon} alt=" "/>
+                    </button>
                 </a>
 
-                <h2>App Explained</h2>
-                {appExplained}
+                <br/><br/>
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                    <button class={project.githubLink ? 'githubButton' : 'unlinkedButton githubButton' } disabled={!project.githubLink}>View on GitHub<img class="buttonIcon" src={githubIcon} alt=" "/></button>
+                </a>
             </p>
+            <h2>App Explained</h2>
+            {appExplained} 
             <br /><br /><br /><br />
         </>
     )

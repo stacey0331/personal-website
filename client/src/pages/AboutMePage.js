@@ -1,9 +1,7 @@
 import React from 'react';
 import Experience from '../components/Experience';
-import AboutmeIntro from '../text/AboutmeIntro';
 import myResume from '../files/stacey-resume.pdf';
 import aboutmeExperience from '../text/aboutme-experience'
-import AboutmeInterest from '../text/AboutmeInterest'
 
 // Images
 import myPhoto1 from '../images/myPhoto1.JPG';
@@ -26,7 +24,8 @@ import upIcon from '../images/upArrow.png';
 const AboutMePage = () => (
         <>
             <h1>About me</h1>
-            <AboutmeIntro />
+            <p>Hi, I’m Stacey. I enjoy coding and want to become a software engineer in the future. </p>
+            <p>Although I’m still exploring the different areas of software engineering,  I’m currently interested in building front-end applications the most.</p>
             <img class="myPhoto" src={myPhoto1} alt="Stacey 1" />
             <img class="myPhoto" src={myPhoto2} alt="Stacey 2" />
             <img class="myPhoto" src={myPhoto3} alt="Stacey 3" />
@@ -60,16 +59,19 @@ const AboutMePage = () => (
             </div>
 
             <h2>Interests</h2>
-            <AboutmeInterest />
+            <p>Besides coding, I love dancing. </p>
+            <p>Just like coding, dancing allows me to be creative and express myself. </p>
+            <p>I co-founded “KCDC Monta Vista, ” a dance team under the Korean club in Monta Vista High School. We did K-pop dance covers and performances.</p>
+            <p>Some of our best videos:</p>
             <iframe title="16 shots cover" width="560" height="315" src="https://www.youtube-nocookie.com/embed/fdqfjg8IWzU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe title="feel special cover" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ca0zq1btC50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe title="16 shots performance" width="560" height="315" src="https://www.youtube-nocookie.com/embed/ohYnd45sodM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
             <br/><br/>
-            <p>I also just enjoty learning new skills in general! </p>
+            <p>I also just enjoy learning new skills in general! </p>
             <p>Some of the other skills I have are: </p>
-            <p>Doing nails , photography, hair coloring, etc. </p>
-            <p>( follow my nails ig page <a class="coloredLink" href="https://www.instagram.com/nailsbystaceyl/" target="_blank" rel="noopener noreferrer">here</a> —> <a href="https://www.instagram.com/nailsbystaceyl/" ><img class="buttonIcon" src={igIcon} alt="Insta" target="_blank" rel="noopener noreferrer"/></a> )</p>
+            <p>Doing nails, photography, hair coloring, etc. </p>
+            <p>( follow my nails instagram page <a class="coloredLink" href="https://www.instagram.com/nailsbystaceyl/" target="_blank" rel="noopener noreferrer">here</a> —> <a href="https://www.instagram.com/nailsbystaceyl/" ><img class="buttonIcon" src={igIcon} alt="Insta" target="_blank" rel="noopener noreferrer"/></a> )</p>
             
             <br/><br/>
             <div class="grid-container-2">

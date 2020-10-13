@@ -10,7 +10,7 @@ import trig1 from '../images/project-snapshots/Trig-1.png'
 const PortfolioPage = () => (
  <>
     <h1>Portfolio</h1>
-    <p>Here’re a selection of some of my programming projects</p>
+    <p>Here's a selection of some of my programming projects</p>
 
     <div class="projectPreviews">
       <ProjectPreview project={portfolioProject[0]} img={person1} />
