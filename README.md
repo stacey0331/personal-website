@@ -13,7 +13,7 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
 1. Download all the packages and the dependencies
 
     ```
-    cd docs
+    cd client
     npm i
     cd ..
     ```
