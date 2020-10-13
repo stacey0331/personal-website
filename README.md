@@ -10,7 +10,7 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
 
 ## Local Installation
 
-1. Download all the package and the dependencies
+1. Download all the packages and the dependencies
 
     ```
     cd docs
@@ -30,7 +30,7 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
     cd ..
     ```
 
-2. Run ```npm start``` inside all folders (except the /admin folder if you're not the admin`).
+2. Run ```npm start``` inside all folders, and now you can see the website running: 
 
     Frontend(client)
     ```
@@ -44,7 +44,7 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
 
 ## Support
 
-If you need help accessing the website through the url or locally, please don't hestitate to contact [staceyleetsaihsun@gmail.com](mailto:staceyleetsaihsun@gmail.com).
+If you need help accessing the website, or see something not working, please don't hestitate to contact [staceyleetsaihsun@gmail.com](mailto:staceyleetsaihsun@gmail.com).
 
 ## Project status
 
