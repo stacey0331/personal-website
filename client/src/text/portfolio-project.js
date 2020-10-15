@@ -2,9 +2,10 @@ const projects = [
     {
         name: "personal-website",
         title: "Personal Website",
-        description: "I believe it’s a better version of my resume :)",
+        description: "This website but a little bit more complicated :)",
         longDescription: [
-            "This is my first web app with React.",
+            "This is the website you're seeing right now, but with a backend to deal with the \"contact me\" form",
+            "It's my first web app with the React framework.",
             "I picked up my older personal website (which I used vanilla HTML and CSS) and rebuilt it with React. ",
             "Also, this is my first time using a digital design tool to design the UI (I used the app called \"Sketch\"). No pencil and paper feel good XD. "
         ],
@@ -12,12 +13,11 @@ const projects = [
             "React.js",
             "HTML5",
             "CSS3",
-            "JavaScript",
-            "reactstrap"
+            "JavaScript"
         ],
         author: "Stacey Lee",
         date: "2020/9",
-        githubLink: "",
+        githubLink: "https://github.com/stacey0331/personal-website-local",
         vidLink: "",
         dirDownload: ""
     },
@@ -60,5 +60,3 @@ const projects = [
 ];
 
 export default projects;
-
-
