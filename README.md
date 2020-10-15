@@ -10,37 +10,31 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
 
 ## Local Installation
 
-1. Download all the packages and the dependencies
-
-    ```
-    cd client
-    npm i
-    cd ..
-    ```
+1. Run the server
 
     ```
     cd server
     npm i
-    cd ..
+    localhost:8000
     ```
+
+2. In another window, run the client
+
     ```
-    #! Run this only when you're the admin
-    cd admin
+    cd client
     npm i
-    cd ..
-    ```
-
-2. Run ```npm start``` inside all folders, and now you can see the website running: 
-
-    Frontend(client)
-    ```
     localhost:3000
     ```
 
-    Admin
+3. To see all the form responses, run the admin
+
     ```
+    cd admin
+    npm i
     localhost:3001
     ```
+
+** Note: these are default port numbers. It might change if the port is already in use on your computer. 
 
 ## Support
 
