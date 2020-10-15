@@ -51,7 +51,9 @@ const ProjectPage = ({ match }) => {
                     <><br />{paragraph}</>
                 ))}
                 <br/><br/>
-                <a href={project.dirDownload === "Econ101" ? Econ101 : project.dirDownload === "TrigCrashCourse" ? TrigCrashCourse : ''}>
+                {
+                    // eslint-disable-next-line
+                }<a href={project.dirDownload === "Econ101" ? Econ101 : project.dirDownload === "TrigCrashCourse" ? TrigCrashCourse : ''}>
                     <button class={project.dirDownload ? '' : 'unlinkedButton'} disabled={!project.dirDownload}>
                         Download folder<img class="buttonIcon" src={dirIcon} alt=" "/>
                     </button>

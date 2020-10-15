@@ -37,7 +37,7 @@ const ContactMePage = () => {
          <p>
             Feel free to contact me regarding anything (including your thoughts on this site :) 
             <br />
-            Or, contact me through email <a className="coloredLink" href="mailtostaceyleetsaihsun@gmail.com">staceyleetsaihsun@gmail.com</a>
+            Or, contact me through email <a className="coloredLink" href="mailto:staceyleetsaihsun@gmail.com">staceyleetsaihsun@gmail.com</a>
             <img className="buttonIcon" src={emailIcon} alt=" " />  
          </p>
 
