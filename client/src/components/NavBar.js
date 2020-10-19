@@ -8,7 +8,7 @@ const NavBar = (props) => {
   const toggleNavbar = () => setCollapsed(!collapsed);
 
   return (
-    <div id="pageTop">
+    <div id="navBar">
       <Navbar color="faded" style={{backgroundColor: "#EDD9FF"}} light>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <div style={{textAlign: "right"}}>

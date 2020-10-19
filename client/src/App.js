@@ -31,6 +31,8 @@ function App() {
         <div id="loadingText">Loading ...</div>
       </div>
       <NavBar />
+      <div id="pageTop" />
+      <br /><br /><br /><br />
       <Switch>
         <Route path="/" component={HomePage} exact/>
         <Route path="/about-me" component={AboutMePage} />

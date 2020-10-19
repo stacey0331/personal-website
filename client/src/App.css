@@ -87,6 +87,14 @@ a:hover {
   outline: 0;
 }
 
+/* The navigation bar */
+#navBar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 98;
+}
+
 /* The back to top button on the bottom right corver of some pages */
 .backToTop {
   width: 100px;
@@ -117,7 +125,8 @@ a:hover {
 /* Stacey's Avatar */
 #avatar {
   border-radius: 50%;
-  width: 25vh;
+  width: 20vw;
+  min-width: 25vh;
   margin: 10vh;
   margin-bottom: 5vh;
 }
@@ -131,7 +140,7 @@ a:hover {
 .navItem {
   font-family: 'Dancing Script', cursive;
   font-size: 300%;
-  padding-bottom: 26vh;
+  padding-bottom: 19vh;
   padding-left: 10vw;
   text-align: left;
 }
@@ -333,10 +342,6 @@ input:focus, textarea:focus {
   p {
     margin-left: 15%;
     margin-right: 15%;
-  }
-
-  .navItem {
-    padding-bottom: 18vh;
   }
 
   .homeSubtitle {
