@@ -15,7 +15,8 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
     ```
     cd server
     npm i
-    localhost:8000
+    npm start
+    (open localhost:8000 in browser)
     ```
 
 2. In another window, run the client
@@ -23,7 +24,8 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
     ```
     cd client
     npm i
-    localhost:3000
+    npm start
+    (open localhost:3000 in browser)
     ```
 
 3. To see all the form responses, run the admin
@@ -31,7 +33,8 @@ This website is created by Stacey independently, from coding the FE/BE to UI des
     ```
     cd admin
     npm i
-    localhost:3001
+    npm start
+    (open localhost:3001 in browser)
     ```
 
 ** Note: these are default port numbers. It might change if the port is already in use on your computer. 
